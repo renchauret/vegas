@@ -34,7 +34,6 @@ class Mat(playerCount: Int) {
             val maxIndex = dice.indexOf(maxDice)
             scores.add(Pair(maxIndex, it))
         }
-//        println(scores)
         return scores
     }
 

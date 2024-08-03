@@ -6,8 +6,6 @@ fun main() {
     val humanPlayerCount = readlnOrNull()?.toIntOrNull() ?: throw Throwable("Invalid player count")
     println("How many random bot players are there?")
     val botPlayerCount = readlnOrNull()?.toIntOrNull() ?: throw Throwable("Invalid player count")
-//    val humanPlayerCount = 0
-//    val botPlayerCount = 3
     val totalPlayerCount = humanPlayerCount + botPlayerCount
     val mats = Mats(totalPlayerCount)
     val humanPlayers: Array<Player> = Array(humanPlayerCount) { Human("p${it + 1}") }
